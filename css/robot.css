@@ -1,0 +1,111 @@
+html,body{
+    height:100%;
+    margin:0;
+    padding:0;
+}
+.container{
+    display:flex;
+    flex-direction:column;
+    height:100%;
+}
+.header{
+    background-color:deepskyblue;
+    height:70px;
+    display:flex;
+    justify-content:space-between;
+}
+.header_title{
+    padding-top:13px;
+    padding-left:25px;
+    font-size:30px;
+    font-weight:600;
+    color:white;
+}
+.header_clear{
+    color:white;
+    padding-top:22px;
+    padding-right:30px;
+    font-size:18px;
+    cursor:pointer;
+}
+.main{
+    flex:1;
+    width:100%;
+    overflow:auto;
+}
+.footer{
+    display:flex;
+    border:1px skyblue solid;
+}
+#footer_chat{
+    width:100%;
+    height:90px;
+    margin-top:17px;
+    margin-bottom:15px;
+    border-color:skyblue;
+    margin-left:20px;
+    padding-left:6px;
+    font-size:15px;
+    border:1px solid #00C1DE
+}
+
+.footer_send{
+    width:85px;
+    height:33px;
+    text-align:center;
+    margin:50px 20px;
+    border:1px solid #00C1DE;
+    background:#e2f8fb;
+    border-radius:3px;
+    color:#00a2ca;
+    cursor:pointer;
+}
+.sender{
+    margin-right: 30px;
+    float:right;
+}
+.sender_main{
+    max-width:600px;
+    line-height: 20px;
+    padding: 7px 10px;
+    word-break: break-all;
+    word-wrap: break-word;
+    border-radius: 10px;
+    background: #00a3f0;
+    color: #fff;
+    margin-top:30px;
+    margin-bottom:10px;
+    animation:myfirst 5s;
+}
+.receiver:before{
+    content:"";
+    display:block;
+    background: url(title.png);
+    background-repeat: round;
+    height:40px;
+    width:40px;
+    float:left;
+    margin-top:27px;
+    margin-right:15px;
+}
+.receiver{
+    margin-left:30px;
+}
+.receiver_main{
+    float:left;
+    max-width:600px;
+    line-height: 20px;
+    padding: 7px 10px;
+    word-break: break-all;
+    word-wrap: break-word;
+    border-radius: 10px;
+    background: #00a3f0;
+    color: #fff;
+    margin-top:30px;
+    margin-bottom:10px;
+    animation:myfirst 2s;
+}
+@keyframes myfirst{	
+    from {background:skyblue;}
+    to {background:#00a3f0;}
+}
